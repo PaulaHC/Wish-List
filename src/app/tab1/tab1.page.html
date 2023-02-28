@@ -1,17 +1,21 @@
-<ion-header [translucent]="true">
+<ion-header >
   <ion-toolbar>
     <ion-title>
       Lista de pendientes 
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Lista de pendientes</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-content padding>
+  <ion-card>
+      <ion-item>
+        BOTON!!
+      </ion-item>
+      <h2>{{lista.nombre}}</h2>
+      <ion-list no-lines *ngFor="let item of lista.actividades">
+        <ion-item>
+          <ion-icon name="arrow-dropright-circle" item-start></ion-icon>
+          {{item}}
+        </ion-item>
+      </ion-list>
+  </ion-card>
 </ion-content>
