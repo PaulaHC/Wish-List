@@ -1,0 +1,7 @@
+{
+  "name": "Wish-List",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
